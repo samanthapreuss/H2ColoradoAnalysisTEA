@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f7f23d9df3c94f4ce8930f2929d7aeb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0f7f23d9df3c94f4ce8930f2929d7aeb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0f7f23d9df3c94f4ce8930f2929d7aeb = L.map(
+                "map_0f7f23d9df3c94f4ce8930f2929d7aeb",
+                {
+                    center: [39.0, -105.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_878fc80911cd2f941d2e192068952c3e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_878fc80911cd2f941d2e192068952c3e.addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var marker_1cbb7b3b1e7eaf9c765e07a447b44269 = L.marker(
+                [40.625878828869, -105.117877128123],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_50cbaff502851b58b762737d1ca18892 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9efb3a510faba850133620b560529d4d = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_04d30f6a5f0d87cfd1901cb2aee161d1 = $(`<div id="html_04d30f6a5f0d87cfd1901cb2aee161d1" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid green; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">2300 W County Road 54G</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$330,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">S (2,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">96.58%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">528</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>Poudre School District  (243 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY OF FORT COLLINS (285 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/2300-W-County-Road-54G-Laporte-CO/33671750/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: green; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_9efb3a510faba850133620b560529d4d.setContent(html_04d30f6a5f0d87cfd1901cb2aee161d1);
+            
+        
+
+        marker_1cbb7b3b1e7eaf9c765e07a447b44269.bindPopup(popup_9efb3a510faba850133620b560529d4d)
+        ;
+
+        
+    
+    
+            marker_1cbb7b3b1e7eaf9c765e07a447b44269.bindTooltip(
+                `<div>
+                     Hub (S): 2300 W County Road 54G
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cbb7b3b1e7eaf9c765e07a447b44269.setIcon(icon_50cbaff502851b58b762737d1ca18892);
+            
+    
+            var marker_6e659049f8d3527e82bce568b783d0e8 = L.marker(
+                [39.722253633534, -105.192465086092],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_2cc311d3afdce5a15c26f68987708553 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8f19558e9f9a581f1434e8c9a5db407 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_5341bec00bee2d803673ec1a6db8b614 = $(`<div id="html_5341bec00bee2d803673ec1a6db8b614" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid red; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">17160 W Colfax Ave</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$500,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">L (10,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">54.89%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">807</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>ENIVIRONMENTAL LANDWORKS COMPANY INC (115 heavy duty vehicles)</li><li style='margin-bottom:4px;'>HOLCIM WCR INC (298 heavy duty vehicles)</li><li style='margin-bottom:4px;'>JEFFCO SCHOOLS (274 heavy duty vehicles)</li><li style='margin-bottom:4px;'>JEFFERSON COUNTY (120 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/17160-W-Colfax-Ave-Golden-CO/29520298/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: red; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_c8f19558e9f9a581f1434e8c9a5db407.setContent(html_5341bec00bee2d803673ec1a6db8b614);
+            
+        
+
+        marker_6e659049f8d3527e82bce568b783d0e8.bindPopup(popup_c8f19558e9f9a581f1434e8c9a5db407)
+        ;
+
+        
+    
+    
+            marker_6e659049f8d3527e82bce568b783d0e8.bindTooltip(
+                `<div>
+                     Hub (L): 17160 W Colfax Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e659049f8d3527e82bce568b783d0e8.setIcon(icon_2cc311d3afdce5a15c26f68987708553);
+            
+    
+            var marker_be463d0fdc32c2331e2919687b2abf12 = L.marker(
+                [39.654049416843, -104.88550562639],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_f93fa04ec18340770a0a02958bc98443 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79603e4d44a7bee1239fe4d166835cc3 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_b0426ac254246fa32cae5eeed9c5be6b = $(`<div id="html_b0426ac254246fa32cae5eeed9c5be6b" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid orange; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">3401 S Yosemite St</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$675,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">M (5,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">82.58%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">632</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>COMCAST (194 heavy duty vehicles)</li><li style='margin-bottom:4px;'>SWINGLE TREE & LANDSCAPE CARE (135 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY LIGHT AND POWER INC (121 heavy duty vehicles)</li><li style='margin-bottom:4px;'>WHEEL PROS LLC (182 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/3401-S-Yosemite-St-Denver-CO/39837277/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: orange; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_79603e4d44a7bee1239fe4d166835cc3.setContent(html_b0426ac254246fa32cae5eeed9c5be6b);
+            
+        
+
+        marker_be463d0fdc32c2331e2919687b2abf12.bindPopup(popup_79603e4d44a7bee1239fe4d166835cc3)
+        ;
+
+        
+    
+    
+            marker_be463d0fdc32c2331e2919687b2abf12.bindTooltip(
+                `<div>
+                     Hub (M): 3401 S Yosemite St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be463d0fdc32c2331e2919687b2abf12.setIcon(icon_f93fa04ec18340770a0a02958bc98443);
+            
+    
+            var marker_1e8e5b3d13f3c56fa3d13113196337a3 = L.marker(
+                [39.649773884125, -105.079540805378],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_6c57e5d8c3a8c32b98b7f229c4c1438c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46fbf4724cc6cb87e00eab0360fc5318 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_9a88d99bcfd315d18c971a467c7636a0 = $(`<div id="html_9a88d99bcfd315d18c971a467c7636a0" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid lightgreen; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">7300 W Jefferson Ave</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$379,999.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">XS (1,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">90.50%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">109</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>PACIFIC SHIPPING & TRUCKING CO INC (109 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/7300-W-Jefferson-Ave-Lakewood-CO/38419312/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: lightgreen; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_46fbf4724cc6cb87e00eab0360fc5318.setContent(html_9a88d99bcfd315d18c971a467c7636a0);
+            
+        
+
+        marker_1e8e5b3d13f3c56fa3d13113196337a3.bindPopup(popup_46fbf4724cc6cb87e00eab0360fc5318)
+        ;
+
+        
+    
+    
+            marker_1e8e5b3d13f3c56fa3d13113196337a3.bindTooltip(
+                `<div>
+                     Hub (XS): 7300 W Jefferson Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e8e5b3d13f3c56fa3d13113196337a3.setIcon(icon_6c57e5d8c3a8c32b98b7f229c4c1438c);
+            
+    
+            var marker_518114de3a2d7e3f6725510f8b26c566 = L.marker(
+                [39.849854027782, -105.100317795342],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_40b4e9ad899bf8750cc2cccc70bf4c93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_651c456f9277c7a73bdbf0fd35e7f589 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_cdeafb3a24e887d75ac9d2ed70583033 = $(`<div id="html_cdeafb3a24e887d75ac9d2ed70583033" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid orange; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">9190 W 84th Ave</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$499,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">M (5,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">49.15%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">296</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>ALPINE MILLWORK COMPANY DBA ROCKY MOUNTAIN RELOAD (141 heavy duty vehicles)</li><li style='margin-bottom:4px;'>GEOSTABILIZATION INTERNATIONAL LLC (155 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/9190-W-84th-Ave-Arvada-CO/38160305/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: orange; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_651c456f9277c7a73bdbf0fd35e7f589.setContent(html_cdeafb3a24e887d75ac9d2ed70583033);
+            
+        
+
+        marker_518114de3a2d7e3f6725510f8b26c566.bindPopup(popup_651c456f9277c7a73bdbf0fd35e7f589)
+        ;
+
+        
+    
+    
+            marker_518114de3a2d7e3f6725510f8b26c566.bindTooltip(
+                `<div>
+                     Hub (M): 9190 W 84th Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_518114de3a2d7e3f6725510f8b26c566.setIcon(icon_40b4e9ad899bf8750cc2cccc70bf4c93);
+            
+    
+            var marker_b781ba68e8671485b6cfca54365c8d4f = L.marker(
+                [39.724337332754, -104.800258318335],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_58568d10e7a128fd68dc06cc668c5a9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98f4442c93741da670361d0cef2295e3 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_0aa80153070c66a09194492946ef5795 = $(`<div id="html_0aa80153070c66a09194492946ef5795" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid red; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">496 Laredo st</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$500,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">L (10,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">86.80%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">1,261</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>AURORA PUBLIC SCHOOLS (127 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY OF AURORA (271 heavy duty vehicles)</li><li style='margin-bottom:4px;'>METCO LANDSCAPING INC (226 heavy duty vehicles)</li><li style='margin-bottom:4px;'>WAGNER EQUIPMENT CO (423 heavy duty vehicles)</li><li style='margin-bottom:4px;'>SHAMROCK FOODS COMPANY (214 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/496-Laredo-st-Aurora-CO/38708025/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: red; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_98f4442c93741da670361d0cef2295e3.setContent(html_0aa80153070c66a09194492946ef5795);
+            
+        
+
+        marker_b781ba68e8671485b6cfca54365c8d4f.bindPopup(popup_98f4442c93741da670361d0cef2295e3)
+        ;
+
+        
+    
+    
+            marker_b781ba68e8671485b6cfca54365c8d4f.bindTooltip(
+                `<div>
+                     Hub (L): 496 Laredo st
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b781ba68e8671485b6cfca54365c8d4f.setIcon(icon_58568d10e7a128fd68dc06cc668c5a9f);
+            
+    
+            var marker_7539a21c171e8e8cc5c71fead43bdefb = L.marker(
+                [40.437732372143, -104.982630626628],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_0d099f56652d880f827469bb22fe2080 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_009f9eb84995a9848d656ccd832c9332 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_4d7a54e1bf49743448b336a6d8fa4553 = $(`<div id="html_4d7a54e1bf49743448b336a6d8fa4553" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid orange; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">NEC N Fairgrounds Ave</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$483,449.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">M (5,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">84.87%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">684</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>LARIMER COUNTY (131 heavy duty vehicles)</li><li style='margin-bottom:4px;'>NOVUS AG LLC (444 heavy duty vehicles)</li><li style='margin-bottom:4px;'>LOVELAND MUNICIPALITY (109 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/NEC-N-Fairgrounds-Ave-Windsor-CO/29890025/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: orange; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_009f9eb84995a9848d656ccd832c9332.setContent(html_4d7a54e1bf49743448b336a6d8fa4553);
+            
+        
+
+        marker_7539a21c171e8e8cc5c71fead43bdefb.bindPopup(popup_009f9eb84995a9848d656ccd832c9332)
+        ;
+
+        
+    
+    
+            marker_7539a21c171e8e8cc5c71fead43bdefb.bindTooltip(
+                `<div>
+                     Hub (M): NEC N Fairgrounds Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7539a21c171e8e8cc5c71fead43bdefb.setIcon(icon_0d099f56652d880f827469bb22fe2080);
+            
+    
+            var marker_2439caf1be77fa5766dd1ca5e63d1d86 = L.marker(
+                [39.536519536914, -104.76116705724],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_2c4a518597ad7dc4826ed72e962faa28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e8fbcdaf9e0b65dc054aab591133d58 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_ba3ac0a2d0675cc172610aa57b3598e5 = $(`<div id="html_ba3ac0a2d0675cc172610aa57b3598e5" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid orange; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">11958 Lincoln Ave</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$495,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">M (5,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">98.74%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">725</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>ACCELERATED SERVICES LLC (373 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CHERRY CREEK SCHOOLS (352 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/Lincoln-Ave-Parker-CO/39741118/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: orange; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_1e8fbcdaf9e0b65dc054aab591133d58.setContent(html_ba3ac0a2d0675cc172610aa57b3598e5);
+            
+        
+
+        marker_2439caf1be77fa5766dd1ca5e63d1d86.bindPopup(popup_1e8fbcdaf9e0b65dc054aab591133d58)
+        ;
+
+        
+    
+    
+            marker_2439caf1be77fa5766dd1ca5e63d1d86.bindTooltip(
+                `<div>
+                     Hub (M): 11958 Lincoln Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2439caf1be77fa5766dd1ca5e63d1d86.setIcon(icon_2c4a518597ad7dc4826ed72e962faa28);
+            
+    
+            var marker_3ac333444bca8aed3ff9129000a92bd9 = L.marker(
+                [39.918832606598, -104.965887826386],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_ae799fd24222343481513fa4fa3beb48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7099aaad7d691d99c451ac07e22bbee = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_e93dee6b7546b5ee40afd9312546367d = $(`<div id="html_e93dee6b7546b5ee40afd9312546367d" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid red; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">12015 Irma Dr</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$1,098,017.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">L (10,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">73.50%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">1,428</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>ADAMS 12 FIVE STAR SCHOOLS (182 heavy duty vehicles)</li><li style='margin-bottom:4px;'>TRI-STATE GENERATION & TRANSMISSION ASSOCIATION INC (321 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY OF THORNTON (208 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY OF THORNTON (174 heavy duty vehicles)</li><li style='margin-bottom:4px;'>BALIC TRANSPORT INC (120 heavy duty vehicles)</li><li style='margin-bottom:4px;'>ENVIRONMENTAL DESIGNS LLC (156 heavy duty vehicles)</li><li style='margin-bottom:4px;'>SIM TRUCKING INC (120 heavy duty vehicles)</li><li style='margin-bottom:4px;'>G&Z TRANSPORT LLC (147 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/12015-Irma-Dr-Northglenn-CO/34662093/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: red; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_f7099aaad7d691d99c451ac07e22bbee.setContent(html_e93dee6b7546b5ee40afd9312546367d);
+            
+        
+
+        marker_3ac333444bca8aed3ff9129000a92bd9.bindPopup(popup_f7099aaad7d691d99c451ac07e22bbee)
+        ;
+
+        
+    
+    
+            marker_3ac333444bca8aed3ff9129000a92bd9.bindTooltip(
+                `<div>
+                     Hub (L): 12015 Irma Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ac333444bca8aed3ff9129000a92bd9.setIcon(icon_ae799fd24222343481513fa4fa3beb48);
+            
+    
+            var marker_1de40b2b030f966b7a2905e38bdacc3c = L.marker(
+                [38.910590363159, -104.78892179429],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_50fa56fcebcf712ed44a1c9210103411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e95ce454284258a8764d4c75fbb9b991 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_2bc0fb7ddef2c987964abbe61a0b24a4 = $(`<div id="html_2bc0fb7ddef2c987964abbe61a0b24a4" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid red; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">2120 University Park Blvd</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$295,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">L (10,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">56.90%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">1,031</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>GOODWILL OF COLORADO (134 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY OF COLORADO SPRINGS (326 heavy duty vehicles)</li><li style='margin-bottom:4px;'>VECTRUS SYSTEMS CORPORATION (185 heavy duty vehicles)</li><li style='margin-bottom:4px;'>COLORADO SPRINGS SCHOOL DISTRICT 11 (130 heavy duty vehicles)</li><li style='margin-bottom:4px;'>El PASO COUNTY (112 heavy duty vehicles)</li><li style='margin-bottom:4px;'>MOUNTAIN METROPOLITAN TRANSIT (144 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/2120-University-Park-Blvd-Colorado-Springs-CO/27680798/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: red; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_e95ce454284258a8764d4c75fbb9b991.setContent(html_2bc0fb7ddef2c987964abbe61a0b24a4);
+            
+        
+
+        marker_1de40b2b030f966b7a2905e38bdacc3c.bindPopup(popup_e95ce454284258a8764d4c75fbb9b991)
+        ;
+
+        
+    
+    
+            marker_1de40b2b030f966b7a2905e38bdacc3c.bindTooltip(
+                `<div>
+                     Hub (L): 2120 University Park Blvd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1de40b2b030f966b7a2905e38bdacc3c.setIcon(icon_50fa56fcebcf712ed44a1c9210103411);
+            
+    
+            var marker_2a7835d431528d078350ed4b809b35b5 = L.marker(
+                [39.588430849644, -104.861817781283],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_09d3eb29664ffbff593cc643963a79ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38de7ba579d7d573f4d45a81a856be86 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_a4761c082a4475c2ce8b6f240e8a529b = $(`<div id="html_a4761c082a4475c2ce8b6f240e8a529b" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid darkred; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">7099 S Kenton St</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$976,600.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">XL (20,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">84.99%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">2,298</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>HBSCO DANS TRASH AT YOUR DISPOSAL (110 heavy duty vehicles)</li><li style='margin-bottom:4px;'>BUCKLEY POWDER CO (217 heavy duty vehicles)</li><li style='margin-bottom:4px;'>IHC SCOTT INC (214 heavy duty vehicles)</li><li style='margin-bottom:4px;'>ORICA USA INC (215 heavy duty vehicles)</li><li style='margin-bottom:4px;'>GLOBAL TRANSPORTATION LLC (442 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CH2M OMI CH2MHILL JACOBS (183 heavy duty vehicles)</li><li style='margin-bottom:4px;'>AMERICAN FURNITURE WAREHOUSE CO (340 heavy duty vehicles)</li><li style='margin-bottom:4px;'>TERRACARE ASSOCIATES LLC (156 heavy duty vehicles)</li><li style='margin-bottom:4px;'>ENTERPRISE RENT-A-CAR NATIONAL RENT A CAR ALAMO RENT A CAR (421 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/7099-S-Kenton-St-Centennial-CO/6542016/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: darkred; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_38de7ba579d7d573f4d45a81a856be86.setContent(html_a4761c082a4475c2ce8b6f240e8a529b);
+            
+        
+
+        marker_2a7835d431528d078350ed4b809b35b5.bindPopup(popup_38de7ba579d7d573f4d45a81a856be86)
+        ;
+
+        
+    
+    
+            marker_2a7835d431528d078350ed4b809b35b5.bindTooltip(
+                `<div>
+                     Hub (XL): 7099 S Kenton St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2a7835d431528d078350ed4b809b35b5.setIcon(icon_09d3eb29664ffbff593cc643963a79ec);
+            
+    
+            var marker_b992bdd31317e791b9a0cb99cd10d1b1 = L.marker(
+                [39.811481968412, -104.920723282229],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_16e70c39f8bdcfa52197a32fad96fb6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01b75ef4fe76e08cc29922ec5d95c604 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_52b7fd4f4c5c2b5ca74094b1f74b1102 = $(`<div id="html_52b7fd4f4c5c2b5ca74094b1f74b1102" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid darkred; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">6322 Ivanhoe St</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$1,500,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">XL (20,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">99.80%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">2,697</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>UNITED SITE SERVICES OF NEVADA INC (409 heavy duty vehicles)</li><li style='margin-bottom:4px;'>UNITED SITE SERVICES OF COLORADO INC (147 heavy duty vehicles)</li><li style='margin-bottom:4px;'>OFFEN PETROLEUM LLC (269 heavy duty vehicles)</li><li style='margin-bottom:4px;'>WESTERN DISTRIBUTING TRANSPORTATION CORP (155 heavy duty vehicles)</li><li style='margin-bottom:4px;'>READY MIX CONCRETE COMPANY (191 heavy duty vehicles)</li><li style='margin-bottom:4px;'>RMS CRANES (139 heavy duty vehicles)</li><li style='margin-bottom:4px;'>EAGLE ROCK DISTRIBUTING COMPANY OF COLORADO LLC (148 heavy duty vehicles)</li><li style='margin-bottom:4px;'>WASTE CONNECTIONS OF COLORADO INC (486 heavy duty vehicles)</li><li style='margin-bottom:4px;'>SUPERSHUTTLE DENVER (125 heavy duty vehicles)</li><li style='margin-bottom:4px;'>SURESHOT DRILLING LLC ATOZ FIELD SERVICES LLC DRILL TECH LLC PINNACLE DEVELOPMENT INC HDD SPECIALISTS LLC (135 heavy duty vehicles)</li><li style='margin-bottom:4px;'>COCAL LANDSCAPE SERVICES INC (153 heavy duty vehicles)</li><li style='margin-bottom:4px;'>U S TRANSPORT INC (200 heavy duty vehicles)</li><li style='margin-bottom:4px;'>WEST DIRECT OIL (140 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/6322-Ivanhoe-St-Commerce-City-CO/30497175/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: darkred; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_01b75ef4fe76e08cc29922ec5d95c604.setContent(html_52b7fd4f4c5c2b5ca74094b1f74b1102);
+            
+        
+
+        marker_b992bdd31317e791b9a0cb99cd10d1b1.bindPopup(popup_01b75ef4fe76e08cc29922ec5d95c604)
+        ;
+
+        
+    
+    
+            marker_b992bdd31317e791b9a0cb99cd10d1b1.bindTooltip(
+                `<div>
+                     Hub (XL): 6322 Ivanhoe St
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b992bdd31317e791b9a0cb99cd10d1b1.setIcon(icon_16e70c39f8bdcfa52197a32fad96fb6c);
+            
+    
+            var marker_12384ca53a71408fda8bc0b84a38fac8 = L.marker(
+                [40.006898203868, -105.107210150504],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_fec8d876253728fa00b13fb0279ef166 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bef82172edb84fda53fe89137ddf888 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_a20e001c28b48f278494f35480942ecf = $(`<div id="html_a20e001c28b48f278494f35480942ecf" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid red; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">765 Aspen Ridge Drive Dr</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$556,000.00</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">L (10,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">50.75%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">830</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>BOULDER VALLEY SCHOOL DISTRICT RE-2 (134 heavy duty vehicles)</li><li style='margin-bottom:4px;'>VIA MOBILITY SERVICES (196 heavy duty vehicles)</li><li style='margin-bottom:4px;'>VIA MOBILITY SERVICES (116 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CU (173 heavy duty vehicles)</li><li style='margin-bottom:4px;'>CITY OF LONGMONT (211 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/765-Aspen-Ridge-Drive-Dr-Lafayette-CO/32931931/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: red; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_1bef82172edb84fda53fe89137ddf888.setContent(html_a20e001c28b48f278494f35480942ecf);
+            
+        
+
+        marker_12384ca53a71408fda8bc0b84a38fac8.bindPopup(popup_1bef82172edb84fda53fe89137ddf888)
+        ;
+
+        
+    
+    
+            marker_12384ca53a71408fda8bc0b84a38fac8.bindTooltip(
+                `<div>
+                     Hub (L): 765 Aspen Ridge Drive Dr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12384ca53a71408fda8bc0b84a38fac8.setIcon(icon_fec8d876253728fa00b13fb0279ef166);
+            
+    
+            var marker_c25dab1a633a2f75219b8d75aa549b05 = L.marker(
+                [39.784078257989, -105.064430676896],
+                {
+}
+            ).addTo(map_0f7f23d9df3c94f4ce8930f2929d7aeb);
+        
+    
+            var icon_e9fadc8af2d02644f70f9b8dc9fce619 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gas-pump",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5647e838a81aeec790e4e85fdbee8c27 = L.popup({
+  "maxWidth": 380,
+});
+
+        
+            
+                var html_0b4ab5f0ad64fa896cc9c7dee276c950 = $(`<div id="html_0b4ab5f0ad64fa896cc9c7dee276c950" style="width: 100.0%; height: 100.0%;">         <div style="width:340px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; color: #333;">             <h3 style="margin: 0 0 10px 0; color: #2c3e50; font-size: 14px; border-bottom: 2px solid red; padding-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px;">                 liquid Hub Details (Sol_053)             </h3>                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">                 <tr><td style="padding: 4px 0; vertical-align: top; width: 55%;"><b>Address</b></td><td style="padding: 4px 0;">6109 W 48th Ave</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Land Price</b></td><td style="padding: 4px 0; color: #27ae60; font-weight: bold;">$1,141,446.56</td></tr>                 <tr><td style="padding: 4px 0;"><b>Station Size</b></td><td style="padding: 4px 0;">L (10,000 kg)</td></tr>                 <tr style="background-color: #f8f9fa;"><td style="padding: 4px 0;"><b>Utilization</b></td><td style="padding: 4px 0;">68.37%</td></tr>                 <tr><td style="padding: 4px 0;"><b>Heavy Duty Vehicles Served</b></td><td style="padding: 4px 0;">950</td></tr>             </table>              <div style="border-top: 1px solid #ddd; padding-top: 10px;">                 <b style="display: block; margin-bottom: 5px;">Fleets Served:</b>                 <ul style="margin: 0; padding-left: 18px; color: #555; font-size: 12px;">                     <li style='margin-bottom:4px;'>CITY OF ARVADA (100 heavy duty vehicles)</li><li style='margin-bottom:4px;'>SITEWISE LLC (145 heavy duty vehicles)</li><li style='margin-bottom:4px;'>COMPASS VEHICLE RENTAL INC (170 heavy duty vehicles)</li><li style='margin-bottom:4px;'>COORS DISTRIBUTING COMPANY MILLER COORS LLC (105 heavy duty vehicles)</li><li style='margin-bottom:4px;'>COLD FRONT (121 heavy duty vehicles)</li><li style='margin-bottom:4px;'>NAVAJO EXPRESS INC (309 heavy duty vehicles)</li>                 </ul>             </div>              <div style="margin-top: 15px; text-align: center;">                 <a href="https://www.loopnet.com/Listing/6109-W-48th-Ave-Wheat-Ridge-CO/32583003/" target="_blank"                     style="display: inline-block; padding: 8px 16px; background-color: red; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 11px; letter-spacing: 0.5px;">                     VIEW PROPERTY LISTING                 </a>             </div>         </div>         </div>`)[0];
+                popup_5647e838a81aeec790e4e85fdbee8c27.setContent(html_0b4ab5f0ad64fa896cc9c7dee276c950);
+            
+        
+
+        marker_c25dab1a633a2f75219b8d75aa549b05.bindPopup(popup_5647e838a81aeec790e4e85fdbee8c27)
+        ;
+
+        
+    
+    
+            marker_c25dab1a633a2f75219b8d75aa549b05.bindTooltip(
+                `<div>
+                     Hub (L): 6109 W 48th Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c25dab1a633a2f75219b8d75aa549b05.setIcon(icon_e9fadc8af2d02644f70f9b8dc9fce619);
+            
+</script>
+</html>
